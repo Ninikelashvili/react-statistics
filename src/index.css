@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background-color: #f1f5fa;
+}
+.container {
+  padding: 10% 5%;
+  position: relative;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+.main-title {
+  margin-bottom: 70px;
+}
+.main-title h1 {
+  margin-bottom: 15px;
+  font-weight: 200;
+  font-family: system-ui;
+}
+.main-title span {
+  font-family: system-ui;
+  color: #6d5ee1;
+  margin-left: 5px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.main-title p {
+  font-size: 20px;
+  font-weight: 200;
+  font-family: system-ui;
+}
+.content {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.inputBox {
+  padding: 15px;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 5px;
+  min-width: 332px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: grey;
+}
+
+.registration-content {
+  padding: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logOut {
+  position: absolute;
+  top: 18%;
+  right: 5%;
+  font-size: 27px;
+  cursor: pointer;
+  color: grey;
+  transition: all 0.5s ease;
+}
+.logOut:hover {
+  transform: scale(1.5);
+}
+.loginPage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 85%;
+  background-color: #aaa4e1;
+  transition: all 0.6s ease;
+  transform: translateX(-80%);
+}
+.loginPageActive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 85%;
+  background-color: #aaa4e1;
+  transition: all 0.6s ease;
+  transform: translateX(0);
+}
+
+.loginForm-group,
+.form-group {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.loginForm-group {
+  padding-top: 15%;
+}
+.loginForm,
+.regForm {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  max-width: 400px;
+  margin: 0 auto;
+  width: 100%;
+}
+.log-input,
+.reg-input {
+  padding: 15px 25px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  border: solid 1px #b9b5e7;
+}
+input::placeholder {
+  color: #b9b5e7;
+  font-family: system-ui;
+  font-weight: 200;
+}
+.log-input,
+select,
+textarea {
+  color: #f5f5ff;
+  font-family: system-ui;
+}
+.loginBtn,
+.regBtn {
+  margin-bottom: 20px;
+  padding: 15px 25px;
+  cursor: pointer;
+  outline: none;
+  background-color: #6e5fe3;
+  color: #f1f5fa;
+  font-size: 15;
+  border: none;
+  font-weight: 200;
+  font-family: system-ui;
+  transition: all 0.5s ease-in;
+}
+.loginBtn:hover {
+  background-color: #5243c5;
+  border-radius: 7px;
+}
+.regBtn:hover {
+  background-color: #5243c5;
+  border-radius: 7px;
+}
+.loginForm-group h1,
+.registration-content h1 {
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-family: system-ui;
+  margin-bottom: 5%;
+  letter-spacing: 2px;
+}
+.registration-content h1 {
+  color: #6e5fe3;
+}
+.loginForm-group h1 {
+  color: #f1f5fa;
+  margin-bottom: 5%;
+}
+.goToRegister {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 10px;
+  color: #f1f5fa;
+  font-size: 25px;
+  transition: all 0.5s ease;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+.goToRegister:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+.dataPicker {
+  margin: 0 5px;
+  border: none;
+  padding: 10px 20px;
+  outline: none;
+}
+.chart-container {
+  background-color: #fff;
+  padding: 45px 25px 45px 0;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+.ChartMainContainer {
+  width: 70%;
+}
+
+@media (max-width: 1220px) {
+  .ChartMainContainer {
+    width: 65%;
+  }
+}
+@media (max-width: 1045px) {
+  .ChartMainContainer {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .calendar {
+    margin-top: 20px;
+  }
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logOut {
+    top: 13%;
+  }
+}
+@media (max-width: 780px) {
+  .loginPageActive {
+    width: 100%;
+  }
+  .loginPage {
+    transform: translateX(-85%);
+  }
+}
